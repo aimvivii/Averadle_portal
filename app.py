@@ -71,7 +71,7 @@ def home():
             {"name": "The main channel", "url": "https://t.me/AVERDALE"}, 
             {"name": "Rules", "url": "https://t.me/your_rules_link"},
             {"name": "Navigation", "url": "https://t.me/your_nav_link"},
-            {"name": "Tik Tok", "url": "https://www.tiktok.com/averdale_fm"}
+            {"name": "Tik Tok", "url": "https://www.tiktok.com/@averdale_fm?_r=1&_t=ZS-97OJuldwRl6"}
         ],
         "chronicles_title": "Летопись Герцогства Авердейл: От Пустоши к Сапфировой Империи",
         "chapters": [
