@@ -402,20 +402,20 @@ text-transform: uppercase;
             <h1>{{ clan.title }}</h1>
             <div class="tagline">{{ clan.tagline }}</div>
             <p class="description">{{ clan.description }}</p>
-            <!-- Увеличенный Блок Основателя -->
-<div class="founder-section" style="display: flex; align-items: center; margin-top: 40px; padding: 30px; background: rgba(5, 8, 17, 0.6); border-radius: 20px; border: 1px solid rgba(59, 130, 246, 0.4);">
+            <!-- Исправленный адаптивный Блок Основателя -->
+<div class="founder-section" style="display: flex; flex-wrap: wrap; align-items: center; justify-content: center; margin-top: 40px; padding: 25px; background: rgba(5, 8, 17, 0.6); border-radius: 20px; border: 1px solid rgba(59, 130, 246, 0.4); text-align: center;">
     
-    <!-- Слева: Картинка и имя -->
-    <div class="founder-left" style="margin-right: 40px; text-align: center; flex-shrink: 0;">
-        <img src="{{ url_for('static', filename='governor.JPG') }}" alt="Founder" style="width: 120px; height: 120px; border-radius: 50%; border: 3px solid #3b82f6; object-fit: cover; box-shadow: 0 0 20px rgba(59, 130, 246, 0.3);">
-        <p style="margin: 15px 0 0; color: #ffffff; font-weight: bold; font-size: 16px; font-family: 'Ethnocentric Rg', sans-serif; letter-spacing: 2px; line-height: 1.2;">GOVERNOR:<br>Ален Льюффеньер</p>
+    <!-- Слева: Картинка и имя (на телефоне станет сверху) -->
+    <div class="founder-left" style="margin: 0 0 20px 0; flex: 1 1 100%; display: flex; flex-direction: column; align-items: center;">
+        <img src="{{ url_for('static', filename='governor.JPG') }}" alt="Founder" style="width: 100px; height: 100px; border-radius: 50%; border: 3px solid #3b82f6; object-fit: cover; box-shadow: 0 0 20px rgba(59, 130, 246, 0.3);">
+        <p style="margin: 15px 0 0; color: #ffffff; font-weight: bold; font-size: 14px; font-family: 'Ethnocentric Rg', sans-serif; letter-spacing: 1px;">GOVERNOR:<br>Ален Льюффеньер</p>
     </div>
 
-    <!-- Справа: История и ссылка -->
-    <div class="founder-right" style="color: #e2e8f0; font-size: 1.1em; line-height: 1.8; font-weight: 400;">
+    <!-- Справа: История и ссылка (на телефоне станет снизу) -->
+    <div class="founder-right" style="color: #e2e8f0; font-size: 0.95em; line-height: 1.6; text-align: center; width: 100%;">
         <p style="margin: 0 0 10px 0;">• 27.11.2024 — основание Графства Дэвон</p>
         <p style="margin: 0 0 15px 0;">• 15.05.2025 — реорганизация в Герцогство Авердейл</p>
-        <a href="https://t.me/D1PL0Tbot" style="color: #60a5fa; text-decoration: none; border-bottom: 2px solid #60a5fa; font-weight: bold; font-family: 'Ethnocentric Rg', sans-serif; font-size: 0.9em; transition: 0.3s;">Connection</a>
+        <a href="https://t.me/D1PL0Tbot" style="color: #60a5fa; text-decoration: none; border-bottom: 2px solid #60a5fa; font-weight: bold; font-family: 'Ethnocentric Rg', sans-serif; font-size: 0.8em; padding: 5px;">Connection</a>
     </div>
 </div>
         </section>
